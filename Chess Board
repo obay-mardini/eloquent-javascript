@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+	  <script>
+		  /**
+			Chess board
+
+				Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines. At each position of the grid there is either a space or a “#” character. The characters should form a chess board.
+
+				Passing this string to console.log should show something like this:
+
+				 # # # #
+				# # # #
+				 # # # #
+				# # # #
+				 # # # #
+				# # # #
+				 # # # #
+				# # # #
+
+			*/
+			chessBoard = '';
+			for (i = 1; i <= 8; i++){
+			
+			  // case 1; in the odd lines draw # when the spot has an even number.
+				if (i % 2 !== 0) {
+				  for (var j = 1; j <= 8; j++) {
+					  if (j % 2 === 0) {
+						 chessBoard += '#';
+						} else {
+						  chessBoard += ' ';
+						}
+					}
+			  // case 1; in the even lines draw # when the spot has an odd number.
+				} else {
+				  for (var j = 1; j <= 8; j++) {
+					  if (j % 2 !== 0) {
+						  chessBoard += '#';
+						} else {
+						  chessBoard += ' ';
+						}
+					} 
+				}
+				chessBoard += '\n';
+			}
+			console.log(chessBoard)
+			
+		</script>
+	</body>
+</html>
