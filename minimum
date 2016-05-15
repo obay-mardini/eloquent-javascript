@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+	  <script>
+		  /**
+		Minimum
+
+    The previous chapter introduced the standard function Math.min 
+		that returns its smallest argument. We can do that ourselves now.
+		Write a function min that takes two arguments and returns their minimum.
+
+			*/
+			
+			function min(firstNumber1, secondNumber2) {
+			  if (firstNumber1 < secondNumber2) {
+				  return firstNumber1;
+				} else {
+				  return secondNumber2;
+				}
+			}
+		</script>
+	</body>
+</html>
